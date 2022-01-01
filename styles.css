@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sideNav {
@@ -9,7 +9,7 @@ html {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: antiquewhite;
+    background-color: #8fa59f;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.3s;
@@ -19,13 +19,13 @@ html {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: gold;
+    color: #5b8075;
     display: block;
     transition: 0.3s;
 }
 
 .sideNav a:hover {
-    color: darkgoldenrod;
+    color: #475853;
 }
 
 .sideNav .closeButton {
@@ -34,4 +34,54 @@ html {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid white;
+    padding: 20px 40px;
+}
+
+.mainimg {
+    filter: blur(4px);
+    width: 100%;
+    z-index: 0;
+}
+
+.contactLinks {
+    margin-left: 32px;
+}
+
+body {
+    background-color: #afc2b5;
+}
+
+span {
+    font-size: 25px;
+    margin-bottom: 16px;
+    color: #5b8075;
+}
+
+span:hover {
+    color: #475853;
+}
+
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: white;
+}
+
+img {
+    margin-top: 12px;
 }
