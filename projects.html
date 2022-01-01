@@ -5,21 +5,43 @@
     <head>
         <title>Projects</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+    
+        <div id="sideMenu" class="sideNav">
+            <a href="javascrip:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+        <span onclick="openNav()">Menu</span>
+    
     </head>
 
-    <div id="sideMenu" class="sideNav">
-        <a href="javascrip:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About me</a>
-        <a href="projects.html">Projects</a>
-        <a href="contacts.html">Contact</a>
-    </div>
-    <span onclick="openNav()">Menu</span>
-
     <body>
-        <div id="contacts">
+        <div id="projects">
             <p style="font-size: 40px; color: #5b8075;">Projects</p>
-            <p>Here will be a list of all projects I've made. It's empty now as this is all currently a work in progress</p>
+            <p style="text-indent: 25px;">
+                Here will be a list of all projects I've made. It's empty now as
+                this is all currently a work in progress. The projects will be split
+                into two main groups, "Personal" and "Academic". Personal being
+                projects I've worked on in my free time, while Academic will contain
+                projects I've done for some classes that I'd like to highlight. Under
+                Academic I will also be including a description of the class the
+                project was made for.
+            </p>
+        </div>
+        <br>
+        <div>
+            <button class="tab" onclick="showtab('Personal')">Personal</button>
+            <button class="tab" onclick="showtab('Academic')">Academic</button>
+        </div>
+        <br>
+        <div id="Personal" class="project_tab">
+            <p class="header">Personal</p>
+        </div>
+
+        <div id="Academic" class="project_tab">
+            <p class="header">Academic</p>
         </div>
     </body>
 </html>

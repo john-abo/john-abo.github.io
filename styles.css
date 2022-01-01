@@ -36,7 +36,7 @@ html {
     margin-left: 50px;
 }
 
-.container {
+.main {
     position: relative;
     text-align: center;
 }
@@ -48,7 +48,7 @@ html {
     transform: translate(-50%,-50%);
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
-    border: 3px solid white;
+    border: 3px solid lightgrey;
     padding: 20px 40px;
 }
 
@@ -60,6 +60,32 @@ html {
 
 .contactLinks {
     margin-left: 32px;
+}
+
+.tab {
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #8fa59f;
+}
+
+.project_tab {
+    display: none;
+}
+
+.header {
+    font-size: 32px;
+    color: #5b8075;
+}
+
+.subheader {
+    font-size: 24px;
+    color: #5b8075;
 }
 
 body {
@@ -80,6 +106,8 @@ p {
     margin-top: 1px;
     margin-bottom: 1px;
     color: white;
+    max-width: 750px;
+    text-align: justify;
 }
 
 img {
