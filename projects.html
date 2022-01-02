@@ -1,131 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <script src="script/scripting.js"></script>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projects</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <div id="sideMenu" class="sideNav">
-            <a href="javascrip:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="about.html">About me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contacts.html">Contact</a>
-        </div>
-        <span onclick="openNav()">Menu</span>
-    </head>
+<script src="script/scripting.js"></script>
 
-    <body>
-        <div class="main">
-            <img class="mainimg" src="images/back2.PNG">
-            <div class="centerText">
-                <p style="font-size: 40px; text-align: center;">Projects</p>
-                <p style="font-size: 16px; color: lightgray; text-align: center;">Here are the Fruits of my Labour</p>
-            </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <div id="sideMenu" class="sideNav">
+        <a href="javascrip:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contacts.html">Contact</a>
+    </div>
+    <span onclick="openNav()">Menu</span>
+</head>
+
+<body>
+    <div class="main">
+        <img class="mainimg" src="images/back2.PNG">
+        <div class="centerText">
+            <p style="font-size: 40px; text-align: center;">Projects</p>
+            <p style="font-size: 16px; color: lightgray; text-align: center;">Here are the Fruits of my Labour</p>
         </div>
-        <p class="header">Some things I've done</p>
-        <p style="text-indent: 25px;">
-            Here will be a list of all projects I've made. It's empty now as
-            this is all currently a work in progress. The projects will be split
-            into two main groups, "Personal" and "Academic". Personal being
-            projects I've worked on in my free time, while Academic will contain
-            projects I've done for some classes that I'd like to highlight. Under
-            Academic I will also be including a description of the class the
-            project was made for.
-        </p>
-        <br>
+    </div>
+    <p class="header blockContent">Some things I've done</p>
+    <p class="blockContent" style="text-indent: 25px;">
+        Here will be a list of all projects I've made. It's empty now as
+        this is all currently a work in progress. The projects will be split
+        into two main groups, "Personal" and "Academic". Personal being
+        projects I've worked on in my free time, while Academic will contain
+        projects I've done for some classes that I'd like to highlight. Under
+        Academic I will also be including a description of the class the
+        project was made for.
+    </p>
+    <br>
+    <p class="blockContent" style="text-indent: 25px;">
+        Most of these projects can be found on my <a href="https://github.com/john-abo">github</a>. There is a
+        public
+        repository specifically for the school projects that includes content
+        for other classes that I didn't feel were worth highlighting on this
+        page, but are still free for people to view.
+    </p>
+    <br>
+    <div class="blockContent">
+        <button class="tab" onclick="showtab('Personal')">Personal</button>
+        <button class="tab" onclick="showtab('Academic')">Academic</button>
+    </div>
+    <br>
+    <div id="Personal" class="project_tab">
+        <p class="header blockContent">Personal</p>
+        <p class="blockContent" style="text-indent: 25px;">
+            Some personal projects done in my free time. Some of which worked in collaboration
+            with other people. A couple projects here were done out of interest for material
+            covered in lectures, such as the SQL Desktop App
+        </p><br>
         <div>
-            <button class="tab" onclick="showtab('Personal')">Personal</button>
-            <button class="tab" onclick="showtab('Academic')">Academic</button>
-        </div>
-        <br>
-        <div id="Personal" class="project_tab">
-            <p class="header">Personal</p>
-            <p style="text-indent: 25px;">
-                Some personal projects done in my free time. Some of which worked in collaboration
-                with other people. A couple projects here were done out of interest for material
-                covered in lectures, such as the SQL Desktop App
-            </p><br>
-            <div>
-                <!-- Collaborated with https://wmcoding-mw.github.io/-->
-                <p class="subheader">Sorting Algorithm Visualization</p>
-                <p style="text-indent: 25px;">
-                    TODO write something
-                </p>
-            </div><br>
-            <div>
-                <p class="subheader">Home Forum System</p>
-                <p style="text-indent: 25px;">
-                    TODO write something
-                </p>
-            </div><br>
-            <div>
-                <p class="subheader">SQL Desktop App</p>
-                <p style="text-indent: 25px;">
-                    TODO write something
-                </p>
-            </div><br>
-        </div>
+            <!-- Collaborated with https://wmcoding-mw.github.io/-->
+            <p class="subheader blockContent">Sorting Algorithm Visualization</p>
+            <p class="blockContent" style="text-indent: 25px;">
+                This project was worked in collaboration with a friend of mine, <a
+                    href="https://wmcoding-mw.github.io/">William Marks</a>.
+                Completed before either of us took an algorithms class, we had to do a lot of self-teaching to
+                learn how exactly each algorithm worked. Using Processing, which is a Java based programming
+                language
+                with an emphasis on visualizations, we were able to create a GUI that would allow the user to see
+                the algorithm in action. The largest challenge was definitely translating the algorithm into code
+                that would allow us to show how each element is compared and where the elements are being moved. Of
+                course, once we were able to do so, we felt as though we have gained a deeper understanding of the
+                steps each algorithm used to reach the solution.
+            </p>
+        </div><br>
+        <div>
+            <p class="subheader blockContent">Home Forum System</p>
+            <p class="blockContent" style="text-indent: 25px;">
+                TODO write something
+            </p>
+        </div><br>
+        <div>
+            <p class="subheader blockContent">SQL Desktop App</p>
+            <p class="blockContent" style="text-indent: 25px;">
+                TODO write something
+            </p>
+        </div><br>
+    </div>
 
-        <div id="Academic" class="project_tab">
-            <p class="header">Academic</p>
+    <div id="Academic" class="project_tab blockContent">
+        <p class="header">Academic</p>
+        <p style="text-indent: 25px;">
+            These projects were some personal favourites that I either enjoyed working on,
+            or felt that I learned a lesson that has stuck with me for my somewhat young
+            programming career. Plenty of collaborated works, I was definitely taught
+            important lessons on working with other people. In this tab, I'll just simply
+            group projects into different classes, and give a brief description of the
+            class.
+        </p><br>
+        <div>
+            <p class="subheader">CPSC 331: Data Structures, Algorithms, and Their Analysis</p>
             <p style="text-indent: 25px;">
-                These projects were some personal favourites that I either enjoyed working on,
-                or felt that I learned a lesson that has stuck with me for my somewhat young
-                programming career. Plenty of collaborated works, I was definitely taught
-                important lessons on working with other people. In this tab, I'll just simply
-                group projects into different classes, and give a brief description of the
-                class.
-            </p><br>
-            <div>
-                <p class="subheader">CPSC 331: Data Structures, Algorithms, and Their Analysis</p>
-                <p style="text-indent: 25px;">
-                    TODO write something
-                </p>
-            </div><br>
-            <div>
-                <p class="subheader">CPSC 355: Computing Machinery I</p>
-                <p style="text-indent: 25px;">
-                    My first experience in assembly, and low level programming in general, CPSC 355 has
-                    further intensified my desire to understand the inner workings of the things
-                    around me. A class that drove me to look at code from a different perspective,
-                    CPSC 355 was a challenge that I personally enjoyed. To solve problems with a
-                    different set of tools that I was used to up to this point, it also gave me an
-                    appreciation for the mid to high level languages that I've been using.
-                </p>
-            </div><br>
-            <div>
-                <p class="subheader">CPSC 359: Computing Machinery II</p>
-                <p style="text-indent: 25px;">
-                    The next step after CPSC 355, this class was an interesting step after
-                    assembly. Not just simply delving to a lower level of programming, we covered
-                    other interesting topics such as concurrency at a mid level language and
-                    microarchitecture. CPSC 359 wasn't focused on any specific language, but rather
-                    language-agnostic concepts.
-                </p>
-            </div><br>
-            <div>
-                <p class="subheader">CPSC 441: Computer Networks</p>
-                <p style="text-indent: 25px;">
-                    Probably the most fun I've had in a class, CPSC 441 covered plenty of
-                    interesting topics. The focus of this class wasn't on programming specifically,
-                    but rather the principles behind the protocol stack and important network
-                    concepts. What little programming that was done, was used to demonstrate our
-                    understanding of the concepts taught in lecture and reinforce our knowledge.
-                </p>
-            </div><br>
-            <div>
-                <p class="subheader">CPSC 449: Programming Paradigms</p>
-                <p style="text-indent: 25px;">
-                    CPCS 449 has been one of the most interesting class I've taken so far. The
-                    concepts pushed me to think of programming in a different light. Functional
-                    and logical programming are not typically something many programmers will
-                    encounter in their lifetime; however some concepts are indeed leaking into
-                    more popular languages. Being one of the few classes that truly challenged
-                    me to write code like I've never written before, CPSC 449 was definitely an
-                    experience I will forget.
-                </p>
-            </div><br>
-        </div>
-    </body>
+                Definitely one of the most important classes I've taken, the content of CPSC 331
+                will show up in almost every computer science class I'll take from now one. Data
+                structures and algorithms are essential for any computer science and software
+                engineer. CPSC 331 in comparison to the other data structures and algorithms class
+                had a greater emphasis on analysis, as seen in the name of the class. The
+                mathematical approach to analysis has played a big role in how I approach problem
+                solving.
+            </p>
+        </div><br>
+        <div>
+            <p class="subheader">CPSC 355: Computing Machinery I</p>
+            <p style="text-indent: 25px;">
+                My first experience in assembly, and low level programming in general, CPSC 355 has
+                further intensified my desire to understand the inner workings of the things
+                around me. A class that drove me to look at code from a different perspective,
+                CPSC 355 was a challenge that I personally enjoyed. To solve problems with a
+                different set of tools that I was used to up to this point, it also gave me an
+                appreciation for the mid to high level languages that I've been using.
+            </p>
+        </div><br>
+        <div>
+            <p class="subheader">CPSC 359: Computing Machinery II</p>
+            <p style="text-indent: 25px;">
+                The next step after CPSC 355, this class was an interesting step after
+                assembly. Not just simply delving to a lower level of programming, we covered
+                other interesting topics such as concurrency at a mid level language and
+                microarchitecture. CPSC 359 wasn't focused on any specific language, but rather
+                language-agnostic concepts.
+            </p>
+        </div><br>
+        <div>
+            <p class="subheader">CPSC 441: Computer Networks</p>
+            <p style="text-indent: 25px;">
+                Probably the most fun I've had in a class, CPSC 441 covered plenty of
+                interesting topics. The focus of this class wasn't on programming specifically,
+                but rather the principles behind the protocol stack and important network
+                concepts. What little programming that was done, was used to demonstrate our
+                understanding of the concepts taught in lecture and reinforce our knowledge.
+            </p>
+        </div><br>
+        <div>
+            <p class="subheader">CPSC 449: Programming Paradigms</p>
+            <p style="text-indent: 25px;">
+                CPCS 449 has been one of the most interesting class I've taken so far. The
+                concepts pushed me to think of programming in a different light. Functional
+                and logical programming are not typically something many programmers will
+                encounter in their lifetime; however some concepts are indeed leaking into
+                more popular languages. Being one of the few classes that truly challenged
+                me to write code like I've never written before, CPSC 449 was definitely an
+                experience I will forget.
+            </p>
+        </div><br>
+    </div>
+</body>
+
 </html>

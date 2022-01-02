@@ -68,6 +68,7 @@ html {
     text-align: center;
     padding: 10px 10px;
     cursor: pointer;
+    color: #5b8075;
 }
 
 .tab:hover {
@@ -76,6 +77,11 @@ html {
 
 .project_tab {
     display: none;
+}
+
+.blockContent{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .header {
