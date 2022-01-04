@@ -58,10 +58,6 @@ html {
     z-index: 0;
 }
 
-.contactLinks {
-    margin-left: 32px;
-}
-
 .tab {
     border: none;
     font-size: 20px;
@@ -82,6 +78,7 @@ html {
 .blockContent{
     margin-left: 10%;
     margin-right: 10%;
+    color: black;
 }
 
 .blockImage {
@@ -109,12 +106,13 @@ body {
 
 span {
     font-size: 25px;
-    margin-bottom: 16px;
     color: #5b8075;
+    background-color: white;
+    padding: 10px 10px;
 }
 
 span:hover {
-    color: #475853;
+    background-color: #8fa59f;
 }
 
 p {
